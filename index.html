@@ -38,13 +38,21 @@ header{background:#fff;border-bottom:1px solid #E6E1EF;position:sticky;top:0;z-i
 @media (max-width:1000px){.nav ul{display:none}.nav{height:72px}.nav img{height:48px}}
 
 /* hero */
-.hero{background:var(--purple);color:#fff;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(119,103,162,.35),transparent 55%)}
-.hero .wrap{position:relative;padding-top:96px;padding-bottom:104px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:26px}
-.eyebrow{font-size:13px;font-weight:700;letter-spacing:.18em;color:var(--gold);margin:0}
-.hero h1{font-size:clamp(30px,5vw,54px);color:var(--gold);max-width:900px}
-.hero p.lede{font-size:clamp(17px,2vw,20px);color:#E9E4F3;max-width:640px;margin:0}
-.hero small{display:block;color:#CFC6E3;font-size:14px}
+.hero{background:var(--purple) url(img/hero-office.jpg) 70% 30%/cover no-repeat;color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(47,29,75,.97) 0%,rgba(47,29,75,.93) 38%,rgba(47,29,75,.55) 62%,rgba(47,29,75,.12) 85%,rgba(47,29,75,0) 100%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--gold)}
+.hero .wrap{position:relative;min-height:560px;padding-top:88px;padding-bottom:96px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:24px}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--purple);background:var(--gold);padding:7px 14px;margin:0}
+.hero h1{font-size:clamp(30px,4.4vw,56px);color:var(--gold);max-width:640px}
+.hero p.lede{font-size:clamp(17px,1.8vw,20px);color:#F1EDF8;max-width:520px;margin:0}
+.hero .cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.hero .when{display:flex;align-items:center;gap:10px;margin:0;font-weight:700;font-size:17px;color:#fff}
+.hero small{display:block;color:#DCD4EC;font-size:14px}
+@media (max-width:760px){
+  .hero{background-position:80% bottom;background-size:auto 440px}
+  .hero::before{background:linear-gradient(180deg,rgba(47,29,75,.98) 0%,rgba(47,29,75,.95) 58%,rgba(47,29,75,.35) 80%,rgba(47,29,75,.05) 100%)}
+  .hero .wrap{min-height:0;padding-top:56px;padding-bottom:300px}
+}
 
 /* details */
 .details{background:var(--lav-light)}
@@ -140,11 +148,14 @@ footer small{font-size:12px;letter-spacing:.04em}
 
 <section class="hero">
   <div class="wrap">
-    <p class="eyebrow">FREE WEBINAR &nbsp;|&nbsp; FRIDAY 2 OCTOBER &nbsp;|&nbsp; 12:00 TO 1:00PM ET</p>
+    <p class="eyebrow">FREE WEBINAR</p>
     <h1 class="caps">How to Get Found by Recruiters on LinkedIn</h1>
     <p class="lede">For managers, directors and VPs. See a live recruiter search from the inside, then fix the two things that decide whether you appear in it.</p>
-    <a class="btn btn-gold" href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=e7on8dGYv0CrRalEdVfawPLiooHmC3dNp6y-IBAQW0VUQUw0R0w3MDg2QlhINzVGVUNLR0U3S1FRWS4u&amp;route=shorturl">Save my free seat</a>
-    <small>Free on Zoom. No card needed.</small>
+    <p class="when"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFC700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Friday 2 October, 12:00 to 1:00pm ET</p>
+    <div class="cta">
+      <a class="btn btn-gold" href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=e7on8dGYv0CrRalEdVfawPLiooHmC3dNp6y-IBAQW0VUQUw0R0w3MDg2QlhINzVGVUNLR0U3S1FRWS4u&amp;route=shorturl">Save my free seat</a>
+      <small>Free on Zoom. No card needed.</small>
+    </div>
   </div>
 </section>
 
