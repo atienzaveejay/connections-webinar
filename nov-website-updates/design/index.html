@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Free Webinar and LIT Pages</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2F1D4B;--body:#2B2238;--muted:#5E536E;--lav:#7767A2;--line:#E3DEEC;--soft:#F6F3FA;--gold:#FFC700;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--body);font:400 18px/1.6 Montserrat,'Helvetica Neue',Arial,sans-serif}
+img{display:block;max-width:100%}
+a{color:var(--ink)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{color:var(--ink);margin:0;line-height:1.2}
+h1{font-size:clamp(32px,4.4vw,50px);font-weight:800;letter-spacing:-.01em}
+h2{font-size:clamp(26px,3vw,34px);font-weight:800}
+h3{font-size:19px;font-weight:700}
+p{margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;background:var(--ink);color:#fff;font:700 17px Montserrat,sans-serif;text-decoration:none;border-radius:3px}
+.btn:hover{background:#45306A}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:#FFD84D}
+.textlink{font-weight:700;color:var(--ink);text-underline-offset:4px}
+/* header */
+.top{border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.top img{height:46px;width:auto}
+.top nav{display:flex;gap:28px;font-size:15px;font-weight:600}
+.top nav a{text-decoration:none}
+.top nav a.call{border:2px solid var(--ink);padding:8px 14px;border-radius:3px}
+/* hero */
+.hero{padding:56px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.kicker{font-size:15px;font-weight:700;color:var(--lav);text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px}
+.kicker b{color:var(--ink)}
+.dek{font-size:20px;color:var(--muted);margin:18px 0 26px;max-width:34em}
+.byline{display:flex;align-items:center;gap:14px;margin:0 0 26px}
+.byline img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:50% 20%}
+.byline p{font-size:15px;line-height:1.4;color:var(--muted)}
+.byline b{color:var(--ink);display:block;font-size:16px}
+.under{font-size:15px;color:var(--muted);margin-top:12px}
+/* recruiter panel */
+.panel{border:1px solid var(--line);border-radius:6px;background:#fff;box-shadow:0 18px 40px -24px rgba(47,29,75,.35);overflow:hidden}
+.panel-bar{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:var(--soft);border-bottom:1px solid var(--line);font-size:13px;font-weight:600;color:var(--muted)}
+.panel-body{display:grid;grid-template-columns:200px 1fr}
+.filters{padding:16px 18px;border-right:1px solid var(--line)}
+.filters h4{margin:0 0 10px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.f{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.35;padding:8px 0;color:#9A92A8;transition:color .3s}
+.f i{flex:none;width:18px;height:18px;border:2px solid #C9C2D6;border-radius:3px;margin-top:1px;transition:.3s}
+.f.on{color:var(--ink);font-weight:600}
+.f.on i{background:var(--ink);border-color:var(--ink);box-shadow:inset 0 0 0 3px #fff}
+.results{padding:16px 18px}
+.count{font-size:42px;font-weight:800;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.count-l{font-size:14px;color:var(--muted);margin:6px 0 14px}
+.row{display:flex;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.row .av{width:34px;height:34px;border-radius:50%;background:#DCD5E8;filter:blur(1.5px)}
+.row .ln{height:9px;border-radius:5px;background:#E4DEEE;filter:blur(1px)}
+.row .ln.a{width:60%}.row .ln.b{width:40%;margin-top:6px;background:#EEEAF4}
+.row.you{background:#FFF8D6;margin:0 -18px;padding:10px 18px}
+.row.you .av{filter:none;background:var(--gold)}
+.row.you span{font-size:13px;font-weight:700;color:var(--ink)}
+.panel-note{font-size:12.5px;color:var(--muted);padding:10px 18px;border-top:1px solid var(--line)}
+/* facts row */
+.facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.facts div{padding:20px 0}
+.facts small{display:block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--lav)}
+.facts span{font-weight:600;color:var(--ink)}
+/* sections */
+section{padding:80px 0}
+.lead{max-width:640px;margin-bottom:40px}
+.lead p{margin-top:14px;color:var(--muted)}
+.cover{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--ink)}
+.cover li{list-style:none;padding:22px 22px 0 0}
+.cover .n{font-size:14px;font-weight:800;color:var(--lav);margin-bottom:8px}
+.cover p{font-size:16px;color:var(--muted);margin-top:8px}
+.cover{padding:0;margin:0}
+.host{background:var(--soft)}
+.host .wrap{display:grid;grid-template-columns:320px 1fr;gap:56px;align-items:center}
+.host img{border-radius:4px;aspect-ratio:4/5;object-fit:cover}
+.host p{margin-top:14px;max-width:36em}
+.faq{max-width:760px}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{font-weight:700;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+.faq summary::after{content:"+";font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq details p{margin-top:10px;color:var(--muted)}
+.band{background:var(--ink);color:#fff;padding:64px 0}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.band h2{color:#fff}
+.band p{color:#D9D1EA;margin-top:8px}
+.band .gold{color:var(--gold)}
+footer{padding:28px 0;font-size:14px;color:var(--muted)}
+/* LIT path */
+.path{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.step{padding:26px 22px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:10px;position:relative}
+.step:last-child{border-right:0;background:var(--ink);color:#fff}
+.step:last-child h3,.step:last-child .price{color:#fff}
+.step:last-child .meta,.step:last-child p{color:#D9D1EA}
+.step:last-child .textlink{color:var(--gold)}
+.step .no{font-size:13px;font-weight:800;color:var(--lav);text-transform:uppercase;letter-spacing:.08em}
+.step:last-child .no{color:var(--gold)}
+.price{font-size:30px;font-weight:800;color:var(--ink);line-height:1}
+.price small{font-size:15px;font-weight:600}
+.meta{font-size:14px;color:var(--muted);line-height:1.45}
+.step p{font-size:16px;color:var(--muted);flex:1}
+.step .textlink{font-size:16px}
+.callbox{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;border:2px solid var(--ink);border-radius:6px;padding:28px 32px;margin-top:40px}
+.callbox p{color:var(--muted);margin-top:6px}
+/* page switch for review */
+.switch{position:fixed;right:16px;bottom:16px;z-index:9;display:flex;background:#fff;border:1px solid var(--line);border-radius:6px;box-shadow:0 8px 24px -12px rgba(0,0,0,.3);font-size:13px;font-weight:700}
+.switch a{padding:10px 14px;text-decoration:none;color:var(--muted)}
+.switch a.cur{color:var(--ink);background:var(--soft)}
+.page{display:none}.page.cur{display:block}
+@media (max-width:900px){
+  body{font-size:17px}
+  .top nav a:not(.call){display:none}
+  .top img{height:38px}
+  .hero{padding:28px 0 40px}
+  .hero .wrap,.host .wrap{grid-template-columns:1fr;gap:32px}
+  .dek{font-size:18px;margin:14px 0 20px}
+  .kicker{font-size:13px;letter-spacing:.05em}
+  .byline{margin-bottom:20px}
+  .btn{width:100%}
+  .panel-body{grid-template-columns:1fr}
+  .filters{border-right:0;border-bottom:1px solid var(--line)}
+  .facts .wrap{grid-template-columns:1fr 1fr}
+  .cover{grid-template-columns:1fr}
+  .path{grid-template-columns:1fr}
+  .step{border-right:0;border-bottom:1px solid var(--line)}
+  .callbox{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .host img{max-width:260px}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <img src="img/logo-purple.png" alt="Connections Consulting Partners">
+  <nav><a href="#">Services</a><a href="#lit">Leaders in Transition</a><a href="#">Events</a><a class="call" href="https://calendly.com/kateconnections/introduction">Book a call</a></nav>
+</div></header>
+
+<!-- ============ FREE WEBINAR ============ -->
+<div class="page" id="p-webinar">
+<div class="hero"><div class="wrap">
+  <div>
+    <p class="kicker">Free webinar · <b>Fri 6 Nov, 12:00pm ET</b></p>
+    <h1>How to Stand Out to Recruiters on LinkedIn</h1>
+    <p class="dek">Watch a working recruiter run a live LinkedIn Recruiter search, then fix the four settings that decide whether you show up.</p>
+    <div class="byline"><img src="img/kate-lewis.jpg" alt="Kate Lewis"><p><b>Kate Lewis</b>Recruiter and founder, Connections Consulting Partners</p></div>
+    <a class="btn" href="https://us06web.zoom.us/meeting/register/59aYBEa-RoyZswntRVS1ZA">Save my free seat</a>
+    <p class="under">One hour on Zoom. Free, no card needed.</p>
+  </div>
+  <div class="panel" aria-label="Example LinkedIn Recruiter search">
+    <div class="panel-bar"><span>LinkedIn Recruiter · example search</span><span>Names hidden</span></div>
+    <div class="panel-body">
+      <div class="filters">
+        <h4>Filters</h4>
+        <div class="f on"><i></i>Job title: Director of IT</div>
+        <div class="f"><i></i>Location: Raleigh-Durham</div>
+        <div class="f"><i></i>Skill: Cloud migration</div>
+        <div class="f"><i></i>Open to work</div>
+      </div>
+      <div class="results">
+        <div class="count" id="count">48,210</div>
+        <div class="count-l">people match</div>
+        <div class="row"><div class="av"></div><div style="flex:1"><div class="ln a"></div><div class="ln b"></div></div></div>
+        <div class="row"><div class="av"></div><div style="flex:1"><div class="ln a"></div><div class="ln b"></div></div></div>
+        <div class="row you" id="you" style="visibility:hidden"><div class="av"></div><span>Is your profile still here?</span></div>
+      </div>
+    </div>
+    <div class="panel-note">Each filter a recruiter adds removes people. On 6 Nov Kate shows which ones drop strong candidates.</div>
+  </div>
+</div></div>
+
+<div class="facts"><div class="wrap">
+  <div><small>When</small><span>Fri 6 Nov, 12–1pm ET</span></div>
+  <div><small>Where</small><span>Zoom</span></div>
+  <div><small>Cost</small><span>Free</span></div>
+  <div><small>For</small><span>Managers to VPs</span></div>
+</div></div>
+
+<section><div class="wrap">
+  <div class="lead"><h2>Recruiters don't browse LinkedIn. They filter it.</h2><p>One hour, four changes you can make the same day.</p></div>
+  <ol class="cover">
+    <li><div class="n">01</div><h3>How a search works</h3><p>The filters recruiters use, and where qualified people drop out.</p></li>
+    <li><div class="n">02</div><h3>Your headline</h3><p>What a recruiter reads in the first few seconds.</p></li>
+    <li><div class="n">03</div><h3>Your skills</h3><p>The five to be found for, and why order matters.</p></li>
+    <li><div class="n">04</div><h3>Location and Open to Work</h3><p>The settings that hide you, and how to show recruiters only.</p></li>
+  </ol>
+</div></section>
+
+<section class="host"><div class="wrap">
+  <img src="img/kate-lewis.jpg" alt="Kate Lewis">
+  <div>
+    <h2>Your host, Kate Lewis</h2>
+    <p>Kate founded Connections Consulting Partners, a Raleigh recruiting firm that places technical, sales and leadership talent. She still fills roles every week, so the search you see is the one she runs for clients.</p>
+    <p>Bring your LinkedIn profile in another tab. Most people change something before the hour is up.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap faq">
+  <h2 style="margin-bottom:16px">Questions</h2>
+  <details open><summary>Is it really free?</summary><p>Yes. No card needed.</p></details>
+  <details><summary>Do I need LinkedIn Premium?</summary><p>No. Everything works on a free account.</p></details>
+  <details><summary>What if I can't make it live?</summary><p>The session is live only. The next free webinar is Fri 4 Dec.</p></details>
+</div></section>
+
+<div class="band"><div class="wrap">
+  <div><h2>Fri 6 Nov, <span class="gold">12:00pm ET</span></h2><p>One free hour on Zoom. Bring your profile.</p></div>
+  <a class="btn btn-gold" href="https://us06web.zoom.us/meeting/register/59aYBEa-RoyZswntRVS1ZA">Save my free seat</a>
+</div></div>
+</div>
+
+<!-- ============ LEADERS IN TRANSITION ============ -->
+<div class="page" id="p-lit">
+<div class="hero"><div class="wrap">
+  <div>
+    <p class="kicker">Leaders in Transition</p>
+    <h1>Job search help for managers, directors and VPs</h1>
+    <p class="dek">Three live workshops with a working recruiter, then a weekly group that keeps you moving until you land.</p>
+    <a class="btn" href="https://calendly.com/kateconnections/introduction">Book a free 15-minute LinkedIn review</a>
+    <p class="under">Or start with the <a class="textlink" href="#webinar">free webinar on Fri 6 Nov</a>.</p>
+  </div>
+  <div class="panel">
+    <div class="panel-bar"><span>Your path</span><span>4 steps</span></div>
+    <div class="results">
+      <div class="row" style="border-top:0"><b style="color:var(--ink)">1 · Fundamentals</b><span style="margin-left:auto;font-weight:700;color:var(--ink)">$250</span></div>
+      <div class="row"><b style="color:var(--ink)">2 · Advanced</b><span style="margin-left:auto;font-weight:700;color:var(--ink)">$350</span></div>
+      <div class="row"><b style="color:var(--ink)">3 · Executive</b><span style="margin-left:auto;font-weight:700;color:var(--ink)">$450</span></div>
+      <div class="row you"><b style="color:var(--ink)">LIT Lab, weekly</b><span style="margin-left:auto">$100 a month</span></div>
+    </div>
+    <div class="panel-note">Small groups, live on Zoom, taught by Kate.</div>
+  </div>
+</div></div>
+
+<section style="padding-top:24px"><div class="wrap">
+  <div class="lead"><h2>Take them in order</h2></div>
+  <div class="path">
+    <div class="step"><span class="no">Step 1</span><h3>Fundamentals</h3><div class="price">$250</div><div class="meta">Tue 10 Nov or Tue 8 Dec<br>11am–1pm ET</div><p>Rewrite the top of your resume and the LinkedIn settings recruiters search on.</p><a class="textlink" href="https://buy.stripe.com/fZucN4eD28Os2YK4WFdAk0n">Book Fundamentals →</a></div>
+    <div class="step"><span class="no">Step 2</span><h3>Advanced</h3><div class="price">$350</div><div class="meta">Tue 17 Nov or Tue 15 Dec<br>11am–2pm ET</div><p>Run your search like a sales pipeline, from pitch to salary talk.</p><a class="textlink" href="https://buy.stripe.com/5kQ6oGdyY7KogPA60JdAk0o">Book Advanced →</a></div>
+    <div class="step"><span class="no">Step 3</span><h3>Executive</h3><div class="price">$450</div><div class="meta">Tue 1 Dec or Tue 29 Dec<br>11am–1pm ET</div><p>Define the brand you want to be known for as a senior leader.</p><a class="textlink" href="https://buy.stripe.com/28EaEW9iIaWA7f088RdAk0p">Book Executive →</a></div>
+    <div class="step"><span class="no">After</span><h3>LIT Lab</h3><div class="price">$100<small> /month</small></div><div class="meta">Weekly from 1 Dec<br>Cancel anytime</div><p>Mock interviews, outreach practice and help with live offers.</p><a class="textlink" href="#">Join LIT Lab →</a></div>
+  </div>
+  <div class="callbox">
+    <div><h3>Not sure where to start?</h3><p>In 15 minutes we read your LinkedIn the way a recruiter would and tell you which step fits.</p></div>
+    <a class="btn" href="https://calendly.com/kateconnections/introduction">Book a free review</a>
+  </div>
+</div></section>
+
+<section class="host"><div class="wrap">
+  <img src="img/kate-lewis.jpg" alt="Kate Lewis">
+  <div>
+    <h2>Taught by a recruiter who is hiring now</h2>
+    <p>Kate Lewis founded Connections Consulting Partners in Raleigh and fills technical, sales and leadership roles every week. You learn the search from the person running it.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap faq">
+  <h2 style="margin-bottom:16px">Questions</h2>
+  <details open><summary>Do I take the workshops in order?</summary><p>Yes. LIT Lab opens once you've done Fundamentals and Advanced.</p></details>
+  <details><summary>How big are the groups?</summary><p>Small, so Kate works on your materials with you.</p></details>
+  <details><summary>What if I miss my date?</summary><p>We move your seat to the next month.</p></details>
+  <details><summary>Can I cancel LIT Lab?</summary><p>Yes, anytime.</p></details>
+</div></section>
+
+<div class="band"><div class="wrap">
+  <div><h2>Start with a <span class="gold">free 15-minute review</span></h2><p>We'll tell you which step fits where you are.</p></div>
+  <a class="btn btn-gold" href="https://calendly.com/kateconnections/introduction">Book a free review</a>
+</div></div>
+</div>
+
+<footer><div class="wrap">© 2026 Connections Consulting Partners · Raleigh, NC</div></footer>
+<nav class="switch"><a href="#webinar" data-p="webinar">Free webinar</a><a href="#lit" data-p="lit">LIT page</a></nav>
+<script>
+function show(){const id=location.hash==='#lit'?'lit':'webinar';
+  document.querySelectorAll('.page').forEach(p=>p.classList.toggle("cur",p.id==="p-"+id));
+  document.querySelectorAll('.switch a').forEach(a=>a.classList.toggle('cur',a.dataset.p===id));scrollTo(0,0)}
+addEventListener('hashchange',show);show();
+// recruiter search: filters switch on one by one, count drops
+const steps=[48210,6480,912,140],fs=[...document.querySelectorAll('#p-webinar .f')],c=document.getElementById('count'),you=document.getElementById('you');
+const still=/static/.test(location.search);
+function setStep(i){fs.forEach((f,j)=>f.classList.toggle('on',j<=i));c.textContent=steps[i].toLocaleString('en-US');you.style.visibility=i===3?'visible':'hidden'}
+if(still)setStep(3);else{let i=0;setStep(0);setInterval(()=>{i=(i+1)%5;setStep(Math.min(i,3))},1600)}
+</script>
+</body>
+</html>
